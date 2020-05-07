@@ -1,0 +1,20 @@
+[
+{
+    "id": 1,
+    "name": "character1",
+    "image": "https://www.wallpaperup.com/uploads/wallpapers/2013/03/24/60883/843099fe075f83fa29b99959ca119c3e-1400.jpg",
+    "clicked": false
+},
+{
+    "id": 2,
+    "name": "character2",
+    "image": "https://articles-img.sftcdn.net/image/upload/q_auto:eco/v1558560323/editorial/luke_and_r2.jpg",
+    "clicked": false
+},
+{
+    "id": 3,
+    "name": "charcater3",
+    "image": "https://data.whicdn.com/images/175263165/original.jpg",
+    "clicked": false
+}
+]
