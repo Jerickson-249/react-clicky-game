@@ -13,6 +13,46 @@ class App extends Component{
     characters: characters,
 //score is 0 because we defined it as 0, will get updated value from this.state.score
   }
+
+clickEvent=(id) =>{
+  
+}
+
+clickedImage=(id) =>{
+
+}
+
+gameReset=() =>{
+  this.setState({
+    score: 0,
+    clickedCards: [],
+    characters:characters.map(character=>{
+      character.clicked=false;
+    })
+  })
+}
+
+gameWin=() =>{
+  if (this.state.characters.length === this.state.clickedCards.length) {
+    alert("You Win Szilard!");
+    this.gameReset();
+  }
+}
+
+gameOver=() =>{
+  alert("You LOST! Szilard is the Winner!");
+  this.gameReset();
+}
+
+shuffleStarwars=() =>{
+
+}
+ 
+shuffleImages=(arr) =>{
+  return arr.sort((a,b)=>Math.floor(Math.random()*1000)>500?1:-1);
+
+}
+
   render(){
     return(
       <Wrapper>
@@ -23,6 +63,7 @@ class App extends Component{
           id={characters.id}
           key={characters.id}
           image={characters.image}
+          onClick={this.clickEvent}
           />
         )
       )}

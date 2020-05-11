@@ -14,7 +14,62 @@
 {
     "id": 3,
     "name": "charcater3",
-    "image": "https://data.whicdn.com/images/175263165/original.jpg",
+    "image": "https://www.wallpaperup.com/uploads/wallpapers/2014/01/25/237176/8e636f38adedbc4ebbc03535c948ca5a-700.jpg",
+    "clicked": false
+},
+{
+    "id": 4,
+    "name": "character4",
+    "image": "https://pm1.narvii.com/6732/484c2e8a54ac706927d6bc9917abb120b9a3a1a3v2_hq.jpg",
+    "clicked": false
+},
+{
+    "id": 5,
+    "name": "character5",
+    "image": "https://mustbethistalltoride.files.wordpress.com/2014/01/qui-gon-jinn.jpg",
+    "clicked": false
+
+},
+{
+    "id": 6,
+    "name": "character6",
+    "image": "https://vafloc02.s3.amazonaws.com/isyn/images/f328/img-2386328-f.jpg",
+    "clicked": false
+},
+{
+    "id": 7,
+    "name": "character7",
+    "image": "https://static.tvtropes.org/pmwiki/pub/images/mace_windu17.jpg",
+    "clicked": false
+},
+{
+    "id": 8,
+    "name": "character8",
+    "image": "https://img.rasset.ie/000a74fa-700.jpg",
+    "clicked": false
+},
+{
+    "id": 9, 
+    "name": "character9",
+    "image": "https://img1.grunge.com/img/gallery/false-facts-about-palpatine-you-always-thought-were-true/intro-1557160844.jpg",
+    "clicked": false
+},
+{
+    "id": 10,
+    "name": "character10",
+    "image": "https://pyxis.nymag.com/v1/imgs/6ca/700/5ed153db47b0b6ccb067d29e2429408b00-07-han-solo-harrison-ford.2x.rhorizontal.w710.jpg",
+    "clicked": false
+},
+{
+    "id": 11, 
+    "name": "character11",
+    "image": "https://i.pinimg.com/474x/9f/4b/16/9f4b16b98bbca442af5f84d5cfd9b1cc.jpg",
+    "clicked": false
+},
+{
+    "id": 12,
+    "name": "character12",
+    "image": "https://cdn.onebauer.media/one/media/5d94/b153/c11f/b237/5331/bdc9/rise-of-skywalker-rey.jpg?quality=50&width=700&ratio=16-9&resizeStyle=aspectfill&format=jpg",
     "clicked": false
 }
 ]
