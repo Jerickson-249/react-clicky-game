@@ -6,7 +6,7 @@ import characters from '../src/characters.json';
 import Wrapper from './components/Wrapper';
 
 class App extends Component{
-  state={
+  state={ 
     score: 0,
     highscore: 0,
     clickedCards: [],
@@ -15,11 +15,25 @@ class App extends Component{
   }
 
 clickEvent=(id) =>{
-  
+  this.clickedImage(id);
 }
 
 clickedImage=(id) =>{
-
+  this.setState({
+    characters:characters.map(character =>{
+      if(character.id === id && character.clicked === false) {
+        character.clicked=true; //updating it to true, if we click on it twice, the game is lost
+        this.setState({
+          score:this.state.score+1,
+          highscore:Math.max(this.state.score+1, this.state.highscore) //comparing which one is bigger, that will be the highscore
+        })
+        const clickedCardsCopy=this.state.clickedCards;
+        clickedCardsCopy.push(character.id) //pushing the id of the character into the array
+        this.setState({clickedCards:clickedCardsCopy}) //clickedCards is an array, making sure they are equal
+        this.gameWin();
+      }
+    }) 
+  })
 }
 
 gameReset=() =>{
@@ -44,8 +58,8 @@ gameOver=() =>{
   this.gameReset();
 }
 
-shuffleStarwars=() =>{
-
+shuffleStarwars=(id) =>{
+  this.setState({characters:this.shuffleImages(this.state.characters)}) //whatever order the images or clicking, they are shuffling
 }
  
 shuffleImages=(arr) =>{
