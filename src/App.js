@@ -53,13 +53,13 @@ gameReset=() =>{
 
 gameWin=() =>{
   if (this.state.characters.length === this.state.clickedCards.length) {
-    alert("You Win Szilard!");
+    alert("You Win!");
     this.gameReset();
   }
 }
 
 gameOver=() =>{
-  alert("You LOST! Szilard is the Winner!");
+  alert("You LOST!");
   this.gameReset();
 }
 
