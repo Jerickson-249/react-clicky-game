@@ -75,7 +75,7 @@ shuffleImages=(arr) =>{
   render(){
     return(
       <Wrapper>
-      <Title score={this.state.score} highscore={this.state.score}></Title>
+      <Title score={this.state.score} highscore={this.state.highscore}></Title>
       {characters.map(
         characters =>(
           <Card 
