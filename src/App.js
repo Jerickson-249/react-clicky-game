@@ -32,8 +32,13 @@ clickedImage=(id) =>{
         this.setState({clickedCards:clickedCardsCopy}) //clickedCards is an array, making sure they are equal
         this.gameWin();
       }
+      else if(character.id === id && character.clicked === true) {
+        this.gameOver();
+        this.gameReset();
+      }
     }) 
   })
+ this.shuffleStarwars();
 }
 
 gameReset=() =>{

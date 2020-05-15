@@ -8,9 +8,7 @@ return <div className="header">
 </div>
 
 <div className="scores">
-<p>high scores</p>
-<p>scores</p>
-
+scores: {props.score} highscore: {props.highscore}
 </div>
 </div>
 }
