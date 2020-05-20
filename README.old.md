@@ -8,4 +8,4 @@ A game built with React that tracks when the user clicks an image. If the same i
 * ReactDOM - A npm packaged that serves as the entry point to the DOM and server renderers for React
 * Node.js - JavaScript runtime built on Chrome's V8 JavaScript engine
 
-#### Heroku Link: 
+#### Deployed Link: https://jerickson-249.github.io/react-clicky-game/

@@ -5,7 +5,7 @@ import Card from './components/Card';
 import characters from '../src/characters.json';
 import Wrapper from './components/Wrapper';
 
-class App extends Component{
+class App extends Component{ //setting a base case for this app
   state={ 
     score: 0,
     highscore: 0,
@@ -19,15 +19,15 @@ clickEvent=(id) =>{
 }
 
 clickedImage=(id) =>{
-  this.setState({
-    characters:characters.map(character =>{
-      if(character.id === id && character.clicked === false) {
+  this.setState({ //whenever you click on a image, you are updating the state
+    characters:characters.map(character =>{ //mapping is bascially a for loop and you're mapping through the characters
+      if(character.id === id && character.clicked === false) { //checking if the character has an id and if it's false
         character.clicked=true; //updating it to true, if we click on it twice, the game is lost
         this.setState({
-          score:this.state.score+1,
+          score:this.state.score+1, //score is growing by 1
           highscore:Math.max(this.state.score+1, this.state.highscore) //comparing which one is bigger, that will be the highscore
         })
-        const clickedCardsCopy=this.state.clickedCards;
+        const clickedCardsCopy=this.state.clickedCards; //saved the state of clickedCards
         clickedCardsCopy.push(character.id) //pushing the id of the character into the array
         this.setState({clickedCards:clickedCardsCopy}) //clickedCards is an array, making sure they are equal
         this.gameWin();
@@ -38,7 +38,7 @@ clickedImage=(id) =>{
       }
     }) 
   })
- this.shuffleStarwars();
+ this.shuffleStarwars(); //need to shuffle the images again, regardless if you win or lose
 }
 
 gameReset=() =>{
@@ -51,8 +51,9 @@ gameReset=() =>{
   })
 }
 
+//coming from characters.json which has 12 characters, push the id of the image into ClickedCards
 gameWin=() =>{
-  if (this.state.characters.length === this.state.clickedCards.length) {
+  if (this.state.characters.length === this.state.clickedCards.length) { 
     alert("You Win!");
     this.gameReset();
   }
